@@ -1,0 +1,99 @@
+<!-- LOPEZ, Jamie Denise -->
+<!-- BSIT 3-1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACTIVITY 5: EMBEDDING VARIOUS MULTIMEDIA FEATURES</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="home" id="home">
+            <div class="container">
+                <div class="slide active">
+                    <div class="content">
+                        <span>Tune in to the Essential Tracks</span>
+                        <h3><em>BEYONCÉ</em></h3>
+                        <a href="video.html" class="btn">see more</a>
+                    </div>
+                    <div class="img">
+                        <a onclick="playsong()" ondblclick="pausesong()";>
+                        <img src="img/beyonce.jpg" alt="" width="30%">
+                        </a>
+                        <h5><b>Beyoncé. "Crazy in Love" <em>HOMECOMING: THE LIVE ALBUM</em> (2019)</b></h5></a>
+                        <h6><em>click image to play the track. double click to pause.</em></h6>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>Tune in to the Essential Tracks</span>
+                        <h3><em>TEARS FOR FEARS</em></h3>
+                        <a href="video.html" class="btn">see more</a>
+                    </div>
+                    <div class="img">
+                        <a onclick="playsongtwo()" ondblclick="pausesongtwo()";>
+                        <img src="img/tearsforfears.webp" alt="" width="30%">
+                        </a>
+                        <h5><b>Tears For Fears. "Head Over Heels" <em>Songs From The Big Chair</em> (1985)</b></h5></a>
+                        <h6><em>click image to play the track. double click to pause.</em></h6>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>Tune in to the Essential Tracks</span>
+                        <h3><em>SEULGI</em></h3>
+                        <a href="video.html" class="btn">see more</a>
+                    </div>
+                    <div class="img">
+                        <a onclick="playsongfour()" ondblclick="pausesongfour()";>
+                        <img src="img/seulgi.jpg" alt="" width="30%">
+                        </a>
+                        <h5><b>SEULGI. "Anywhere But Home" <em>28 Reasons - The 1st Mini Album</em> (2022)</b></h5></a>
+                        <h6><em>click image to play the track. double click to pause.</em></h6>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>Tune in to the Essential Tracks</span>
+                        <h3><em>FRANK OCEAN</em></h3>
+                        <a href="video.html" class="btn">see more</a>
+                    </div>
+                    <div class="img">
+                        <a onclick="playsongthree()" ondblclick="pausesongthree()";>
+                        <img src="img/frankocean.jpg" alt="" width="30%">
+                        </a>
+                        <h5><b>Frank Ocean. "Pink + White" <em>Blonde</em> (2016)</b></h5></a>
+                        <h6><em>click image to play the track. double click to pause.</em></h6>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>Tune in to the Essential Tracks</span>
+                        <h3><em>MARK</em></h3>
+                        <a href="video.html" class="btn">see more</a>
+                    </div>
+                    <div class="img">
+                        <a onclick="playsongfive()" ondblclick="pausesongfive()";>
+                        <img src="img/mark.jpg" alt="" width="30%">
+                        </a>
+                        <h5><b>MARK. "Child" <em>Child - SM STATION: NCT LAB</em> (2022)</b></h5></a>
+                        <h6><em>click image to play the track. double click to pause.</em></h6>
+                    </div>
+                </div>
+            </div>
+
+                <div id="next" class="fas fa-angle-right" onclick="next()"></div>
+                <div id="prev" class="fas fa-angle-left" onclick="prev()"></div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

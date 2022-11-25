@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: #212121;
+    color: #b3b3b3;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #1DB954;
+    color: #212121;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 3rem 9%;
+}
+
+@keyframes fadeLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+}
+
+@keyframes fadeUp {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.home{
+    padding-top: 14rem;
+    background: #212121;
+    position: relative;
+}
+
+.home .container .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display: none;
+}
+
+.home .container .slide.active{
+    display: flex;
+}
+
+.home .container .slide .content{
+    flex:  1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+}
+
+.home .container .slide .content span{
+    color: #b3b3b3;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    font-weight: 600;
+}
+
+.home .container .slide .content h3{
+    font-size: 6rem;
+    color: #1DB954;
+    padding: .5rem 0;
+}
+
+.home .container .slide .content h3:hover{
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+}
+
+.home .container .slide .img{
+    flex: 1 1 40rem;
+    margin: 3rem 0;
+}
+
+.home .container .slide .img img{
+    width: 100%;
+    animation: fadeUp .4s linear;
+}
+
+.home .container .slide h5{
+    color: #b3b3b3;
+    font-size: 1.22rem;
+}
+
+.home .container .slide h6{
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.home #next,
+.home #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background: #212121;
+    font-size: 2rem;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+.home #next:hover,
+.home #prev:hover{
+    background: #212121;
+    color: #1DB954;
+}
+
+.home #prev{
+    left: 2rem;
+}
+
+.home #next{
+    right: 2rem;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+    .home #next, .home #prev{
+        transform: translateY(0);
+        top: 88%;
+    }
+    .home #prev{
+        left: auto;
+        right: 8rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    
+    .home .container .slide h3{
+        font-size: 4rem;
+    }
+}
